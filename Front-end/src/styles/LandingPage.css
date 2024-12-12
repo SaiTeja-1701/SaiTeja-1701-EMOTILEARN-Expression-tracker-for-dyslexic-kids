@@ -1,0 +1,279 @@
+/* Ensure the landing page has a scrollbar if the content overflows */
+
+.landing-page-container {
+    height: 100vh;
+    overflow-y: auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+}
+
+
+/* Hero Section */
+
+.hero-section {
+    padding: 120px 20px;
+    background: linear-gradient(135deg, #4e79a7, #ff6f61);
+    color: white;
+    text-align: center;
+    color: #ddd;
+    background-size: cover;
+    background-position: center;
+    transition: background 0.3s ease;
+}
+
+.hero-title {
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: white;
+    /* Added this line to set text color to white */
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.hero-subtitle {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    font-style: italic;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero-button {
+    background-color: #ff6f61;
+    border: none;
+    padding: 18px 40px;
+    font-size: 1.5rem;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.hero-button:hover {
+    background-color: #e15b50;
+    transform: scale(1.05);
+}
+
+
+/* About Section */
+
+.about-section {
+    background-color: #fff;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.about-section h2 {
+    font-size: 2.5rem;
+    color: #4e79a7;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.about-section p {
+    font-size: 1.125rem;
+    color: #666;
+    line-height: 1.8;
+    max-width: 800px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+
+/* Features Section */
+
+.features-section {
+    padding: 80px 20px;
+    background-color: #f3f3f3;
+    text-align: center;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.features-section h2 {
+    font-size: 2.5rem;
+    color: #4e79a7;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.feature-cards {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.feature-card {
+    background-color: white;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 300px;
+    margin: 15px;
+    border-radius: 12px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+}
+
+.feature-card:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.feature-card h3 {
+    font-size: 1.75rem;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.feature-card p {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.6;
+}
+
+
+/* Contact Section */
+
+.contact-section {
+    padding: 60px 20px;
+    background-color: #fff;
+    text-align: center;
+    border-top: 2px solid #ddd;
+}
+
+.contact-section h2 {
+    font-size: 2.5rem;
+    color: #4e79a7;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.contact-section p {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+.contact-section a {
+    color: #4e79a7;
+    text-decoration: none;
+}
+
+.contact-section a:hover {
+    text-decoration: underline;
+}
+
+.contact-section form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-section input,
+.contact-section textarea {
+    padding: 15px;
+    margin: 12px 0;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 1.125rem;
+    width: 100%;
+}
+
+.contact-section button {
+    background-color: #4e79a7;
+    color: white;
+    padding: 18px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.125rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.contact-section button:hover {
+    background-color: #3b659a;
+    transform: scale(1.05);
+}
+
+
+/* Flex Layout for Content */
+
+.landing-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-grow: 1;
+    min-height: 100vh;
+}
+
+
+/* Add subtle animations */
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.landing-page-container {
+    animation: fadeInUp 1s ease-out;
+}
+
+
+/* Responsive Design */
+
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 2.5rem;
+    }
+    .hero-subtitle {
+        font-size: 1.125rem;
+    }
+    .hero-button {
+        font-size: 1.25rem;
+        padding: 14px 28px;
+    }
+    .feature-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+    .feature-card {
+        width: 80%;
+        margin: 20px 0;
+    }
+    .about-section p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-title {
+        font-size: 2rem;
+    }
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+    .feature-card {
+        width: 90%;
+        margin: 20px 0;
+    }
+    .contact-section input,
+    .contact-section textarea {
+        font-size: 1rem;
+    }
+}

@@ -1,0 +1,66 @@
+/* Custom Dark Navbar */
+
+.custom-dark-navbar {
+    background-color: #131541 !important;
+    /* Pure black background with high specificity */
+    color: #fff !important;
+    /* White text */
+    border-bottom: 2px solid #444;
+    /* Optional subtle border */
+}
+
+.custom-dark-navbar .navbar-brand {
+    color: #f8f9fa !important;
+    /* Light grey for brand text */
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.custom-dark-navbar .navbar-brand:hover {
+    color: #ffd700 !important;
+    /* Gold hover effect */
+}
+
+.custom-dark-navbar .navbar-toggler {
+    background-color: #444;
+    /* Dark gray for toggler button */
+    border: none;
+}
+
+.custom-dark-navbar .navbar-toggler-icon {
+    filter: invert(100%);
+    /* White toggler icon */
+}
+
+.custom-dark-navbar .nav-link {
+    color: #f8f9fa !important;
+    /* Light grey links */
+    font-size: 1.2rem;
+    margin: 0 10px;
+}
+
+.custom-dark-navbar .nav-link:hover {
+    color: #ffd700 !important;
+    /* Gold hover effect */
+}
+
+.custom-dark-navbar button.btn-link {
+    color: #f8f9fa !important;
+    /* White logout button */
+    text-decoration: none;
+    padding: 0;
+    font-size: 1.2rem;
+}
+
+.custom-dark-navbar button.btn-link:hover {
+    color: #dc3545 !important;
+    /* Red hover for logout */
+    text-decoration: underline;
+}
+
+.navbar-icon {
+    font-size: 2rem;
+    /* Adjust size */
+    color: white;
+    /* Ensure the icon is visible */
+}
